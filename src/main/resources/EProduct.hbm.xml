@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 29 Aug, 2020 5:21:37 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="com.ecommerce">
+    
+    <class name="EProduct" table="eproduct">
+    	<id name="id" column="id">
+    		<generator class="increment"></generator>
+    	</id>
+    	<property name="name" type="string" column="name"></property>
+    	<property name="price" type="double" column="price"></property>
+    	<property name="dateAdded" type="timestamp" column="date_added"></property>
+    	
+    	
+    </class>
+    
+</hibernate-mapping>
